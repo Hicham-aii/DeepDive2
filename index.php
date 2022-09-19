@@ -21,6 +21,6 @@ include "connection.php";
             <div class="header">
                 <h1>Freezers</h1>
             </div>
-            <button onclick ="window.location.href='logout.php'">Login</button>
+            <button onclick ="window.location.href='logout.php'">Logout</button>
     </body>
 </html>
