@@ -1,5 +1,7 @@
 <?php
+
 include "connection.php";
+
 if (isset($_POST['username']) && ($_POST['wachtwoord'])) {
   $username =  $_POST['username'];
   $wachtwoord =  $_POST['wachtwoord'];
@@ -13,8 +15,8 @@ if (isset($_POST['username']) && ($_POST['wachtwoord'])) {
             $_SESSION["user_id"] = $row['id'];
             $_SESSION["username"] = $row['username'];
             } 
-        }
-    }
+        } 
+    } 
 }
 
 if (isset($_SESSION['user_id'])) {

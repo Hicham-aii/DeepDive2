@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 }
 
 if (
-    !isset($_SESSION['user_id']) && $_SERVER['REQUEST_URI'] != '/DEEPDIVE2/login.php'
-    && $_SERVER['REQUEST_URI'] != '/DEEPDIVE2/register.php'
+    !isset($_SESSION['user_id']) && $_SERVER['REQUEST_URI'] != '/DeepDive2/login.php'
+    && $_SERVER['REQUEST_URI'] != '/DeepDive2/register.php'
 ) {
-    header('login.php');
+    header("Location: login.php");
 }
