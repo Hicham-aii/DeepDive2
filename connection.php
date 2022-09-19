@@ -17,5 +17,5 @@ if (
     !isset($_SESSION['user_id']) && $_SERVER['REQUEST_URI'] != '/DEEPDIVE2/login.php'
     && $_SERVER['REQUEST_URI'] != '/DEEPDIVE2/register.php'
 ) {
-    header("Location: login.php");
+    header('login.php');
 }
